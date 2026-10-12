@@ -1,0 +1,16 @@
+* text=auto eol=lf
+
+*.ino text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.gif binary
+*.mp4 binary
+*.mov binary
+*.pdf binary

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950" role="img" aria-labelledby="title desc">
+  <title id="title">ESPTrain wiring overview</title>
+  <desc id="desc">Clear wiring diagram for the simple ESPTrain build.</desc>
+  <defs>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="950" rx="34" fill="#f8f5ef"/>
+  <text x="70" y="78" font-family="Arial, sans-serif" font-size="46" font-weight="800" fill="#152232">ESPTrain wiring</text>
+  <text x="70" y="118" font-family="Arial, sans-serif" font-size="25" font-weight="500" fill="#334155">Current simple build: SNES serial signals plus LiPo charger output to the ESP32-C3 SuperMini.</text>
+
+  <!-- SNES PCB -->
+  <g filter="url(#softShadow)">
+    <rect x="85" y="220" width="390" height="430" rx="28" fill="#d1fae5" stroke="#047857" stroke-width="5"/>
+  </g>
+  <text x="280" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="800" fill="#064e3b">SNES-style PCB</text>
+  <text x="280" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="500" fill="#047857">aftermarket controller board</text>
+
+  <text x="145" y="380" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#064e3b">VDD</text>
+  <text x="145" y="445" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#064e3b">CK</text>
+  <text x="145" y="510" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#064e3b">DO</text>
+  <text x="145" y="575" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#064e3b">PL</text>
+  <text x="145" y="640" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#064e3b">GND</text>
+
+  <!-- ESP32-C3 board -->
+  <g filter="url(#softShadow)">
+    <rect x="610" y="175" width="360" height="585" rx="34" fill="#dbeafe" stroke="#1d4ed8" stroke-width="5"/>
+  </g>
+  <rect x="720" y="198" width="140" height="60" rx="14" fill="#e5e7eb" stroke="#64748b" stroke-width="4"/>
+  <text x="790" y="237" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334155">USB-C</text>
+  <text x="790" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="800" fill="#1e3a8a">ESP32-C3</text>
+  <text x="790" y="334" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#2563eb">SuperMini</text>
+
+  <text x="660" y="395" text-anchor="end" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#1e3a8a">5V</text>
+  <text x="660" y="450" text-anchor="end" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#1e3a8a">GND</text>
+  <text x="660" y="505" text-anchor="end" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#1e3a8a">3V3</text>
+  <text x="660" y="560" text-anchor="end" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#1e3a8a">GPIO0</text>
+
+  <text x="920" y="395" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#1e3a8a">GPIO7</text>
+  <text x="920" y="450" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#1e3a8a">GPIO6</text>
+  <text x="920" y="505" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#1e3a8a">GPIO5</text>
+  <text x="920" y="560" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#1e3a8a">GPIO4</text>
+  <text x="920" y="615" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#1e3a8a">GPIO3</text>
+
+  <!-- ESP pin pads -->
+  <g fill="#ffffff" stroke="#1d4ed8" stroke-width="4">
+    <circle cx="690" cy="385" r="13"/>
+    <circle cx="690" cy="440" r="13"/>
+    <circle cx="690" cy="495" r="13"/>
+    <circle cx="690" cy="550" r="13"/>
+    <circle cx="890" cy="385" r="13"/>
+    <circle cx="890" cy="440" r="13"/>
+    <circle cx="890" cy="495" r="13"/>
+    <circle cx="890" cy="550" r="13"/>
+    <circle cx="890" cy="605" r="13"/>
+  </g>
+
+  <!-- Charger and battery -->
+  <g filter="url(#softShadow)">
+    <rect x="1160" y="220" width="340" height="170" rx="28" fill="#fee2e2" stroke="#b91c1c" stroke-width="5"/>
+    <rect x="1120" y="520" width="390" height="240" rx="28" fill="#fef3c7" stroke="#b45309" stroke-width="5"/>
+  </g>
+  <text x="1330" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="800" fill="#7f1d1d">803040 LiPo</text>
+  <text x="1195" y="340" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#b91c1c">+</text>
+  <text x="1198" y="370" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#111827">-</text>
+
+  <text x="1185" y="655" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#b45309">B+</text>
+  <text x="1185" y="710" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#78350f">B-</text>
+  <text x="1390" y="655" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#b45309">OUT+</text>
+  <text x="1390" y="710" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#78350f">OUT-</text>
+
+  <!-- SNES signal lines -->
+  <line x1="225" y1="370" x2="690" y2="495" stroke="#059669" stroke-width="7" stroke-linecap="round"/>
+  <line x1="225" y1="435" x2="890" y2="550" stroke="#2563eb" stroke-width="7" stroke-linecap="round"/>
+  <line x1="225" y1="500" x2="890" y2="440" stroke="#7c3aed" stroke-width="7" stroke-linecap="round"/>
+  <line x1="225" y1="565" x2="890" y2="495" stroke="#ea580c" stroke-width="7" stroke-linecap="round"/>
+  <line x1="225" y1="630" x2="690" y2="440" stroke="#111827" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Line labels -->
+  <rect x="500" y="344" width="120" height="38" rx="19" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="560" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#064e3b">VDD to 3V3</text>
+  <rect x="500" y="424" width="115" height="38" rx="19" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="558" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#2563eb">CK to 4</text>
+  <rect x="500" y="489" width="115" height="38" rx="19" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="558" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#7c3aed">DO to 6</text>
+  <rect x="500" y="554" width="115" height="38" rx="19" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="558" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#ea580c">PL to 5</text>
+
+  <!-- Battery to charger -->
+  <line x1="1215" y1="332" x2="1215" y2="655" stroke="#dc2626" stroke-width="7" stroke-linecap="round"/>
+  <line x1="1248" y1="365" x2="1248" y2="710" stroke="#111827" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Charger to ESP -->
+  <path d="M1390 655 C1510 535 1270 430 1060 410 C880 375 750 370 690 385" stroke="#ffffff" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M1390 710 C1180 790 930 655 690 440" stroke="#ffffff" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M1390 655 C1510 535 1270 430 1060 410 C880 375 750 370 690 385" stroke="#dc2626" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M1390 710 C1180 790 930 655 690 440" stroke="#111827" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+  <rect x="1150" y="535" width="340" height="66" rx="18" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="1320" y="564" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#78350f">USB-C charger</text>
+  <text x="1320" y="592" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#78350f">protection module</text>
+
+  <rect x="80" y="785" width="610" height="105" rx="22" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="110" y="825" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#152232">Important</text>
+  <text x="110" y="858" font-family="Arial, sans-serif" font-size="21" font-weight="500" fill="#334155">Do not wire every button separately.</text>
+  <text x="110" y="883" font-family="Arial, sans-serif" font-size="21" font-weight="500" fill="#334155">The PCB is read through SNES latch / clock / data.</text>
+
+  <rect x="760" y="785" width="760" height="105" rx="22" fill="#fff7ed" stroke="#fb923c" stroke-width="3"/>
+  <text x="790" y="825" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#9a3412">Power note</text>
+  <text x="790" y="858" font-family="Arial, sans-serif" font-size="21" font-weight="500" fill="#9a3412">Verify the exact ESP32-C3 SuperMini board accepts</text>
+  <text x="790" y="883" font-family="Arial, sans-serif" font-size="21" font-weight="500" fill="#9a3412">LiPo voltage on its 5V/VBUS input.</text>
+</svg>
