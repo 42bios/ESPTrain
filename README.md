@@ -94,4 +94,6 @@ arduino-cli compile --fqbn 'esp32:esp32:esp32c3:CDCOnBoot=cdc' ESPTrainArduino
 
 The firmware is usable in the current simple build. The next hardware step is a small piggyback PCB for cleaner wiring and optional feedback parts.
 
-No license has been selected yet.
+## License
+
+MIT License. See [LICENSE](LICENSE).
