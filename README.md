@@ -1,10 +1,8 @@
 # ESPTrain - SNES Bluetooth Controller for LEGO DUPLO 10874
 
+[![buy me a coffee – donate](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow?style=flat)](https://buymeacoffee.com/42bios)
+
 ESPTrain turns an aftermarket SNES-style controller into a BLE remote for an unmodified LEGO DUPLO 10874 train. An ESP32-C3 SuperMini reads the controller PCB through the SNES serial interface and sends LEGO Wireless Protocol commands over Bluetooth Low Energy. 🚂🎮
-
-If you find this project useful, you can support its development and testing by buying me a coffee.
-
-[![buy me a coffee – donate](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow?style=flat-square)](https://buymeacoffee.com/42bios)
 
 ![Simple ESPTrain build](docs/images/simple-build-controller-pcb.jpg)
 
@@ -97,6 +95,10 @@ arduino-cli compile --fqbn 'esp32:esp32:esp32c3:CDCOnBoot=cdc' ESPTrainArduino
 ## Status
 
 The firmware is usable in the current simple build. The next hardware step is a small piggyback PCB for cleaner wiring and optional feedback parts.
+
+## Support
+
+If you find this project useful, you can [buy me a coffee](https://buymeacoffee.com/42bios) to support development and testing.
 
 ## License
 
